@@ -8,10 +8,10 @@ vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 
 -- Disable arrow keys
-vim.api.nvim_set_keymap('n', '<Up>', '<Nop>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<Down>', '<Nop>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<Left>', '<Nop>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<Right>', '<Nop>', { noremap = true })
+vim.api.nvim_set_keymap("n", "<Up>", "<Nop>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<Down>", "<Nop>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<Left>", "<Nop>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<Right>", "<Nop>", { noremap = true })
 
 -- Splits
 vim.keymap.set("n", "|", ":vsplit<CR>")
@@ -28,3 +28,9 @@ vim.keymap.set("n", "<c-x>", ":BufferLineCloseOthers<CR>")
 
 -- Todo
 vim.keymap.set("n", "<leader>td", ":TodoTelescope<CR>")
+
+-- Glance
+vim.keymap.set("n", "gD", "<CMD>Glance definitions<CR>")
+vim.keymap.set("n", "gR", "<CMD>Glance references<CR>")
+vim.keymap.set("n", "gY", "<CMD>Glance type_definitions<CR>")
+vim.keymap.set("n", "gM", "<CMD>Glance implementations<CR>")
