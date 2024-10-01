@@ -32,7 +32,7 @@ return {
                         desc = " Tree",
                         group = "Label",
                         action = "Neotree toggle left reveal",
-                        key = "t",
+                        key = "n",
                     },
                 },
             },

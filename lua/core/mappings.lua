@@ -18,7 +18,7 @@ vim.keymap.set("n", "|", ":vsplit<CR>")
 vim.keymap.set("n", "\\", ":split<CR>")
 
 -- Neo Tree
-vim.keymap.set("n", "<leader>t", ":Neotree toggle left reveal<CR>")
+vim.keymap.set("n", "<leader>nt", ":Neotree toggle left reveal<CR>")
 
 -- Tabs
 vim.keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>")
