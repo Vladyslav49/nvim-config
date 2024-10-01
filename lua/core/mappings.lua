@@ -27,7 +27,7 @@ vim.keymap.set("n", "<leader>x", ":BufferLinePickClose<CR>")
 vim.keymap.set("n", "<c-x>", ":BufferLineCloseOthers<CR>")
 
 -- Todo
-vim.keymap.set("n", "<leader>td", ":TodoTelescope<CR>")
+vim.keymap.set("n", "<leader>tt", ":TodoTelescope<CR>")
 
 -- Glance
 vim.keymap.set("n", "gD", "<CMD>Glance definitions<CR>")
