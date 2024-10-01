@@ -34,3 +34,8 @@ vim.keymap.set("n", "gD", "<CMD>Glance definitions<CR>")
 vim.keymap.set("n", "gR", "<CMD>Glance references<CR>")
 vim.keymap.set("n", "gY", "<CMD>Glance type_definitions<CR>")
 vim.keymap.set("n", "gM", "<CMD>Glance implementations<CR>")
+
+-- Spectre
+vim.keymap.set("n", "<leader>S", "<cmd>lua require('spectre').toggle()<CR>", {
+    desc = "Toggle Spectre"
+})
