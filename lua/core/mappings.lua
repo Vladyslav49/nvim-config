@@ -39,3 +39,11 @@ vim.keymap.set("n", "gM", "<CMD>Glance implementations<CR>")
 vim.keymap.set("n", "<leader>S", "<cmd>lua require('spectre').toggle()<CR>", {
     desc = "Toggle Spectre"
 })
+
+-- Neotest
+vim.keymap.set("n", "<leader>tn", ":lua require('neotest').run.run()<CR>")
+vim.keymap.set("n", "<leader>tf", ":lua require('neotest').run.run(vim.fn.expand('%'))<CR>")
+vim.keymap.set("n", "<leader>ts", ":lua require('neotest').summary.toggle()<CR>")
+vim.keymap.set("n", "<leader>tnf", ":lua require('neotest').jump.next({ status = 'failed' })<CR>")
+vim.keymap.set("n", "<leader>to", ":lua require('neotest').output.open()<CR>")
+vim.keymap.set("n", "<leader>ta", ":lua require('neotest').run.run(vim.fn.getcwd())<CR>")
