@@ -47,3 +47,7 @@ vim.keymap.set("n", "<leader>ts", ":lua require('neotest').summary.toggle()<CR>"
 vim.keymap.set("n", "<leader>tnf", ":lua require('neotest').jump.next({ status = 'failed' })<CR>")
 vim.keymap.set("n", "<leader>to", ":lua require('neotest').output.open()<CR>")
 vim.keymap.set("n", "<leader>ta", ":lua require('neotest').run.run(vim.fn.getcwd())<CR>")
+
+-- Diffview
+vim.keymap.set("n", "<leader>do", ":DiffviewOpen<CR>")
+vim.keymap.set("n", "<leader>dh", ":DiffviewFileHistory<CR>")
