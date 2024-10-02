@@ -63,7 +63,7 @@ vim.keymap.set({ "n", "x" }, "<leader>rr", ":lua require('refactoring').select_r
     { desc = "Open refactor menu" })
 
 -- Live Rename
-vim.keymap.set("n", "<leader>r", ":lua require('live-rename').map({ insert = true })<CR>",
+vim.keymap.set("n", "<leader>r", ":lua require('live-rename').rename({ insert = true })<CR>",
     { desc = "Rename the word (cursor at the end)" })
-vim.keymap.set("n", "<leader>R", ":lua require('live-rename').map({ text = '', insert = true })<CR>",
+vim.keymap.set("n", "<leader>R", ":lua require('live-rename').rename({ text = '', insert = true })<CR>",
     { desc = "Rename with an empty word" })
