@@ -55,16 +55,12 @@ return {
                 callback = function(ev)
                     vim.bo[ev.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
 
-                    local opts = { buffer = ev.buf }
-                    vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-                    vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-                    vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
-                    vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
-                    vim.keymap.set("n", "<Leader>D", vim.lsp.buf.type_definition, opts)
-                    vim.keymap.set({ "n", "v" }, "<Leader>la", vim.lsp.buf.code_action, opts)
-                    vim.keymap.set("n", "<Leader>lf", function()
-                        vim.lsp.buf.format({ async = true })
-                    end, opts)
+                    vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition", buffer = ev.buf })
+                    vim.keymap.set("n", "gt", vim.lsp.buf.type_definition,
+                        { desc = "Go to type definition", buffer = ev.buf })
+                    vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show hover info", buffer = ev.buf })
+                    vim.keymap.set({ "n", "v" }, "<Leader>la", vim.lsp.buf.code_action,
+                        { desc = "Show code actions", buffer = ev.buf })
                 end,
             })
         end

@@ -11,7 +11,4 @@ return {
         -- Optional.  If installed, native fzy will be used when match_algorithm is fzy
         { "nvim-telescope/telescope-fzy-native.nvim" },
     },
-    vim.keymap.set("n", "<leader>ff", function()
-        require("telescope").extensions.smart_open.smart_open()
-    end, { desc = "Telescope smart open" })
 }
