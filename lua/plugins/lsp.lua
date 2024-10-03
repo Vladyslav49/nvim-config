@@ -25,6 +25,9 @@ return {
                                 enabled = true,
                                 overrides = { "--enable-incomplete-feature", "NewGenericSyntax", true },
                             },
+                            rope_autoimport = {
+                                enabled = true,
+                            }
                         },
                     },
                 },
