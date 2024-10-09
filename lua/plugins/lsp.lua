@@ -25,9 +25,15 @@ return {
                                 enabled = true,
                                 overrides = { "--enable-incomplete-feature", "NewGenericSyntax", true },
                             },
-                            rope_autoimport = {
-                                enabled = true,
-                            }
+                            rope_autoimport = { enabled = true },
+                            pyflakes = { enabled = false },
+                            mccabe = { enabled = false },
+                            pycodestyle = { enabled = false },
+                            pydocstyle = { enabled = false },
+                            autopep8 = { enabled = false },
+                            yapf = { enabled = false },
+                            flake8 = { enabled = false },
+                            pylint = { enabled = false },
                         },
                     },
                 },

@@ -54,9 +54,8 @@ vim.keymap.set("n", "<leader>do", ":DiffviewOpen<CR>", { desc = "Open project di
 vim.keymap.set("n", "<leader>dh", ":DiffviewFileHistory<CR>", { desc = "Show file history" })
 
 -- Smart Open
-vim.keymap.set("n", "<leader>ff", function()
-    require("telescope").extensions.smart_open.smart_open()
-end, { desc = "Fuzzy search files" })
+vim.keymap.set("n", "<leader>ff", ":lua require('telescope').extensions.smart_open.smart_open()<CR>",
+    { desc = "Fuzzy search files" })
 
 -- Refactoring
 vim.keymap.set({ "n", "x" }, "<leader>rr", ":lua require('refactoring').select_refactor()<CR>",
