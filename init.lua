@@ -5,5 +5,5 @@ require("core.lazy")
 
 -- Neovide
 if vim.g.neovide then
-    vim.opt.guifont = "JetBrainsMono Nerd Font:h11"
+    vim.g.neovide_transparency = 0
 end
