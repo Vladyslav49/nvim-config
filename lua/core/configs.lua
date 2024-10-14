@@ -6,7 +6,7 @@ vim.wo.relativenumber = true
 vim.opt.mouse = ""
 
 -- Clipboard
-vim.opt.clipboard = "unnamed"
+vim.opt.clipboard = "unnamedplus"
 
 -- Indent Settings
 vim.opt.shiftwidth = 4
