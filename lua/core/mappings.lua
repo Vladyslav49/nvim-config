@@ -66,3 +66,13 @@ vim.keymap.set("n", "<leader>r", ":lua require('live-rename').rename({ insert = 
     { desc = "Rename the word (cursor at the end)" })
 vim.keymap.set("n", "<leader>R", ":lua require('live-rename').rename({ text = '', insert = true })<CR>",
     { desc = "Rename with an empty word" })
+
+-- Text Case
+vim.keymap.set("n", "<leader>ctu", ":lua require('textcase').lsp_rename('to_upper_case')<CR>",
+    { desc = "Convert to UPPER CASE" })
+vim.keymap.set("n", "<leader>ctl", ":lua require('textcase').lsp_rename('to_lower_case')<CR>",
+    { desc = "Convert to lower case" })
+vim.keymap.set("n", "<leader>ctp", ":lua require('textcase').lsp_rename('to_pascal_case')<CR>",
+    { desc = "Convert to PascalCase" })
+vim.keymap.set("n", "<leader>cts", ":lua require('textcase').lsp_rename('to_snake_case')<CR>",
+    { desc = "Convert to snake_case" })
