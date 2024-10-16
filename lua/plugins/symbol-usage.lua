@@ -3,7 +3,7 @@ return {
     event = "LspAttach",
     config = function()
         require("symbol-usage").setup({
-            disable = { lsp = { "pylsp", "basedpyright" } }
+            disable = { lsp = { "pylsp" } }
         })
     end
 }
